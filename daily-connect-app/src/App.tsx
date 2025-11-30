@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AppProvider, useApp } from './context/AppContext';
 import { FirstTimeSetup } from './components/FirstTimeSetup';
 import { Dashboard } from './pages/Dashboard';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Child } from '@/types';
 
 interface ChildSelectorProps {

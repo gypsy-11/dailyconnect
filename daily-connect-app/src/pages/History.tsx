@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useApp } from '@/context/AppContext';
 import { Card } from '@/components/ui/Card';
 import { BookOpen, Sparkles } from 'lucide-react';

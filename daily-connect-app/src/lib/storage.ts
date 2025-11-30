@@ -1,4 +1,4 @@
-import { AppData, Child, Question, AskedQuestion, Streak, Settings } from '@/types';
+import { AppData, Settings } from '@/types';
 import { initializeQuestions } from './questions';
 
 const STORAGE_KEY = 'daily-connect-data';

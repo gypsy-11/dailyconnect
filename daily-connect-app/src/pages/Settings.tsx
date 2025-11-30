@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useApp } from '@/context/AppContext';
 import { Card } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
@@ -151,17 +151,20 @@ export function Settings() {
             <p className="text-sm text-charcoal-light">
               Restore data from a previously exported backup file
             </p>
-            <label className="block">
+            <div>
               <input
+                id="import-file"
                 type="file"
                 accept=".json"
                 onChange={handleImport}
                 className="hidden"
               />
-              <Button variant="secondary" as="span">
-                Choose File to Import
-              </Button>
-            </label>
+              <label htmlFor="import-file">
+                <Button variant="secondary" type="button" onClick={() => document.getElementById('import-file')?.click()}>
+                  Choose File to Import
+                </Button>
+              </label>
+            </div>
           </div>
 
           {/* Clear All */}
